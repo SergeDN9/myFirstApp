@@ -1,0 +1,12 @@
+li {
+  font-size: 2em;
+}
+.myButton {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 10px;
+  width: 300px;
+  border: solid 1px blue;
+}
+
+

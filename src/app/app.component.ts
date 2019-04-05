@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Sergio website !';
+
+  showMovies = true;
+
+  displayMovieList() {
+    this.showMovies = !this.showMovies;
+  }
 }

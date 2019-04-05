@@ -2,24 +2,28 @@
   <img [src]='user.photo' [alt]='user.name' />
 </p>
 
-<div>
+<div class='container'>
+
   <h2><span>Nom: </span>{{user.name}}</h2>
   <h2><span>Prenom: </span>{{user.firstName}}</h2>
+
+
+  <div>
+    <h2>{{user.quote | uppercase}}</h2>
+  </div>
+
+  <div class='myButton'>
+    <label>
+      <input [(ngModel)]='user.quote' placeholder='ta citation ici' />
+    </label>
+  </div>
+
+  <div id='divAge'>
+    <h2><span>Age: </span>{{user.age}}</h2>
+  </div>
+
+  <div class='myButton'>
+    <button (click)="masquerQuote()">Afficher/masquer mon age</button>
+  </div>
+
 </div>
-
-<div>
-  <h2>{{user.quote | uppercase}}</h2>
-</div>
-
-<div>
-  <label>
-    <input [(ngModel)]='user.quote' placeholder='ta citation ici' />
-  </label>
-</div>
-
-<div id='divAge'>
-  <h2><span>Age: </span>{{user.age}}</h2>
-</div>
-
-<button (click)="masquerQuote()">Afficher/masquer mon age</button>
-
